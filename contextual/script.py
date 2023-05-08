@@ -6,7 +6,7 @@ from difflib import SequenceMatcher
 questions = ["Have you had a good day $name", "how is the weather in $location", "does it feel good to be $age"]
 
 def appendToFile(filename, appendText):
-    with open(filename, "a") as myfile:
+    with open(filename, "ab") as myfile:
         myfile.write(appendText)
 
 def updateFile(filename, data):
